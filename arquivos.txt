@@ -1,0 +1,21 @@
+camposworkspace
+ANhAK8rQ293TDhKQ
+
+export interface Drinks {
+  id: string; // Gera automaticamente
+  entry_data: string; // Gera automaticamente (data de registro)
+  nome: string; // Nome da bebida
+  category: string; // Categoria da bebida
+  quantity: number; // Quantidade em estoque
+  validity?: Date | null; // Data de validade (opcional ou nulo)
+  record_type: "Entrada" | "Saída"; // Define se é Entrada ou Saída
+  used_event?: string; // Necessário apenas para "Saída"
+}
+
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar o modal
+
+  // Função para abrir o modal
+  const openModal = () => setIsModalOpen(true);
+
+  // Função para fechar o modal
+  const closeModal = () => setIsModalOpen(false);
